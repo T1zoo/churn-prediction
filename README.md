@@ -28,8 +28,8 @@ cd churn-prediction
 pip install -r requirements.txt
 
 ## 3. Подготовка данных
-Скачайте датасет Telco Customer Churn по ссылке https://www.kaggle.com/datasets/blastchar/telco-customer-churn?spm=a2ty_o01.29997173.0.0.72685171jp6ghC
-Положите файл WA_Fn-UseC_-Telco-Customer-Churn.csv в папку data/raw/
+- Скачайте датасет Telco Customer Churn по ссылке https://www.kaggle.com/datasets/blastchar/telco-customer-churn?spm=a2ty_o01.29997173.0.0.72685171jp6ghC
+- Положите файл WA_Fn-UseC_-Telco-Customer-Churn.csv в папку data/raw/
 
 ## 4. Запустите ноутбук
 notebooks/analysis.ipynb
@@ -53,30 +53,30 @@ python src/predict.py '{"MonthlyCharges": 79.85, "tenure": 1, "Contract": 0, "Pa
 
 Оценка метрик моделей:
 
-Logistic Regression
-ROC-AUC:  0.8402
-Precision: 0.6426
-Recall:    0.5481
-F1-Score:  0.5916
+**Logistic Regression**
+- ROC-AUC:  0.8402
+- Precision: 0.6426
+- Recall:    0.5481
+- F1-Score:  0.5916
 
-Random Forest
-ROC-AUC:  0.8218
-Precision: 0.6388
-Recall:    0.5107
-F1-Score:  0.5676
+**Random Forest**
+- ROC-AUC:  0.8218
+- Precision: 0.6388
+- Recall:    0.5107
+- F1-Score:  0.5676
 
-Gradient Boosting
-ROC-AUC:  0.8449
-Precision: 0.6655
-Recall:    0.5053
-F1-Score:  0.5745
+**Gradient Boosting**
+- ROC-AUC:  0.8449
+- Precision: 0.6655
+- Recall:    0.5053
+- F1-Score:  0.5745
 
-Лучшей моделью оказалась: Gradient Boosting
+Лучшей моделью оказалась: **Gradient Boosting**
 
 Почему ROC-AUC?
-В задаче оттока классы несбалансированы (73% не уходят, 27% уходят). 
-Accuracy вводит в заблуждение - модель, всегда предсказывающая «не уйдет», получит 73% accuracy, но бесполезна.
-ROC-AUC оценивает качественнее в задачах с дисбалансом классов.
+- В задаче оттока классы несбалансированы (73% не уходят, 27% уходят). 
+- Accuracy вводит в заблуждение - модель, всегда предсказывающая «не уйдет», получит 73% accuracy, но бесполезна.
+- ROC-AUC оценивает качественнее в задачах с дисбалансом классов.
 
 **Проект машинного обучения для портфолио**  
 Студент 3 курса БФУ им. И. Канта, направление «Искусственный интеллект и анализ данных»
