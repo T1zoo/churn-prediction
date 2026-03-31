@@ -20,7 +20,7 @@
 
 ### 1. Клонирование репозитория
 ```bash
-git clone https://github.com/ТВОЙ_НИК/churn-prediction.git
+git clone https://github.com/T1zoo/churn-prediction.git
 cd churn-prediction
 ```
 
